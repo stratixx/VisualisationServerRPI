@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-
+#!/usr/bin/env python
 from flask import Flask, render_template
 import datetime
 from flask_socketio import SocketIO
@@ -18,11 +17,11 @@ def index():
     return render_template('index.html', **templateData)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True, port=5000, host='192.168.1.122')
+    socketio.run(app, debug=True, port=5000, host='192.168.1.111')
     
 @socketio.on('my event')
-def handle_my_custom_event(json):
-    print('received json: ' + str(json))
+def handle_my_custom_event(message):
+    print('received message: ' + message)
     return 'ok'
 
 @socketio.on('message')
