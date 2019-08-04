@@ -1,1 +1,6 @@
+#visual studio code
 .vscode/
+#venv virtual environment
+env/
+
+
