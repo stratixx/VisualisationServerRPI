@@ -31,3 +31,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+.GeneratedTable {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+  color: #000000;
+}
+
+.GeneratedTable td, .GeneratedTable th {
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+  padding: 3px;
+}
+
+.GeneratedTable thead {
+  background-color: #ffcc00;
+}
+
