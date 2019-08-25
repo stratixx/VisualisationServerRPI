@@ -4,6 +4,11 @@ import './App.css';
 
 class App extends React.Component {
 
+  constructor(props) {
+    super(props);
+    console.log("App constructor")
+    console.log(this.props);
+  }
 
   buttonInput1() {
     console.log("button input 1 clicked")
@@ -17,7 +22,8 @@ class App extends React.Component {
 
   render() {
   return <div className="App">
-      
+
+
   <table class="GeneratedTable">
     <thead>
       <tr>
